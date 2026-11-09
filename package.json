@@ -1,0 +1,39 @@
+{
+  "name": "pool-pulse",
+  "version": "1.0.0",
+  "description": "Top DEX pools by 24h volume in your terminal, on DexPaprika data",
+  "license": "MIT",
+  "author": "Mateusz Sroka",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "pool-pulse": "bin/pool-pulse.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node bin/pool-pulse.mjs",
+    "test": "node --test test/*.test.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donbagger/pool-pulse.git"
+  },
+  "keywords": [
+    "dexpaprika",
+    "dex",
+    "defi",
+    "liquidity-pools",
+    "cli",
+    "crypto"
+  ]
+}
